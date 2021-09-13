@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dradiantgreen"
+    tools:context=".yield.YPRecommendation">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="429dp"
+        android:layout_height="191dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="0dp">
+
+            <TextView
+                android:id="@+id/functionTxt"
+                android:layout_width="256dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="163dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/yield_prediction"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="136dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="89dp"
+                android:gravity="center_horizontal"
+                android:text="@string/smf"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp" />
+
+            <RelativeLayout
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="286dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/circleforimage"
+                android:backgroundTint="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="9dp"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/imglogo"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/mashroom_icon" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="429dp"
+        android:layout_height="569dp"
+        android:background="@drawable/roundrelativeview"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imgYPMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="14dp"
+                    android:src="@drawable/walkingmushroom"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.067"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.535" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="363dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="@string/estimate_monthly_yield_dpending_on_yield_of_first_5_days_kg"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.322" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dynamicYPLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="308dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="12dp"
+                android:background="#451EAC1E">
+
+                <RelativeLayout
+                    android:id="@+id/monthlyRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:layout_above="@+id/recommendLayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:background="#DF8EBD80">
+
+                    <TextView
+                        android:id="@+id/txtYield"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/monthly_yield"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.846"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.524" />
+
+                    <TextView
+                        android:id="@+id/txtYieldVal"
+                        android:layout_width="131dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_toEndOf="@+id/txtYield"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.788"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.58" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recommendLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="157dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="#86304E2D">
+
+                    <TextView
+                        android:id="@+id/txtRecommendField"
+                        android:layout_width="328dp"
+                        android:layout_height="84dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginBottom="21dp"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.262"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.841" />
+
+                    <TextView
+                        android:id="@+id/txtRecommendation"
+                        android:layout_width="221dp"
+                        android:layout_height="33dp"
+                        android:layout_above="@+id/txtRecommendField"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="71dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/recommendation"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.056"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.727" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:background="#548556"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/btnHTDHistoryBack"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="270dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/btnroundedsmall"
+            android:contentDescription="@string/imgbtnrefresh"
+            android:rotation="180"
+            app:srcCompat="@drawable/forward" />
+
+        <ImageButton
+            android:id="@+id/btnYPNew"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnroundedyellow"
+            android:contentDescription="@string/btnnextimg"
+            app:srcCompat="@drawable/newmedium"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnHTDHistoryHome"
+            android:layout_width="87dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#006C4B4B"
+            android:contentDescription="@string/btnhome"
+            app:srcCompat="@drawable/iconhome"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

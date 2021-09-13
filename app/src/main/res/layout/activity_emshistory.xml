@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".environmental.EMSHistory">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="293dp"
+        android:layout_marginBottom="489dp"
+        android:background="@drawable/dradiantgreen"
+        app:layout_constraintBottom_toTopOf="@+id/btnBottm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/functionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="-8dp"
+            android:layout_marginBottom="154dp"
+            android:gravity="center_horizontal"
+            android:text="@string/enviornmental_monitorin_system"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="207dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="211dp"
+            android:gravity="center_horizontal"
+            android:text="@string/smf"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundrelativeview"
+        app:layout_constraintBottom_toTopOf="@+id/btnBottm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="198dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="191dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="History View"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:id="@+id/tblEMSlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="-1dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:background="@drawable/circleforimage"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="9dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/imglogo"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/mashroom_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnBottm"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:background="#CE468549"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/btnEMSBack"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="281dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/btnroundedsmallcream"
+            android:contentDescription="@string/imgbtnrefresh"
+            android:rotation="180"
+            app:srcCompat="@drawable/forward"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/btnEMSRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/btnroundedsmall"
+            android:contentDescription="@string/imgbtnrefresh"
+            app:srcCompat="@drawable/iconrefresh" />
+
+        <ImageButton
+            android:id="@+id/btnHTDHistoryHome"
+            android:layout_width="87dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btnonlyborder"
+            android:contentDescription="@string/test1"
+            app:srcCompat="@drawable/iconhome"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

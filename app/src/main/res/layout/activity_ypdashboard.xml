@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yield.YPDashboard">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_above="@+id/mainContent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-82dp"
+        android:background="@drawable/dradiantgreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/functionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/yield_prediction"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="136dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="207dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="73dp"
+            android:gravity="center_horizontal"
+            android:text="@string/smf"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/circleforimage"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="9dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/imglogo"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/mashroom_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="579dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/roundrelativeview">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_above="@+id/scroll1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/yield_prediction_recommendation"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="432dp"
+            android:layout_height="500dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="-39dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerTemp"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:baselineAligned="false"
+                        android:spinnerMode="dropdown"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/imgTemp"
+                        android:layout_width="46dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:baselineAligned="false"
+                        android:contentDescription="@string/imgtemp"
+                        app:srcCompat="@drawable/icontemp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <ImageView
+                        android:id="@+id/imgHumidity"
+                        android:layout_width="63dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginEnd="21dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toStartOf="@+id/spinnerHumidity"
+                        android:baselineAligned="false"
+                        android:contentDescription="@string/imghumidity"
+                        app:srcCompat="@drawable/iconhumi"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <Spinner
+                        android:id="@+id/spinnerHumidity"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="13dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:baselineAligned="false"
+                        android:spinnerMode="dropdown"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerCo2"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="13dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:baselineAligned="true"
+                        android:spinnerMode="dropdown"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/imgCo2"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="17dp"
+                        android:layout_toStartOf="@+id/spinnerCo2"
+                        android:baselineAligned="false"
+                        android:contentDescription="@string/imgco2"
+                        app:srcCompat="@drawable/iconco2"
+                        tools:ignore="ImageContrastCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerDisease"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="13dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:baselineAligned="false"
+                        android:spinnerMode="dropdown"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/imgDisease"
+                        android:layout_width="46dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="38dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="37dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toStartOf="@+id/spinnerDisease"
+                        android:baselineAligned="false"
+                        android:contentDescription="@string/imgco2"
+                        app:srcCompat="@drawable/virus"
+                        tools:ignore="ImageContrastCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerHarvest"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="13dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:baselineAligned="false"
+                        android:spinnerMode="dropdown"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/imgHarvest"
+                        android:layout_width="46dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="38dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_toStartOf="@+id/spinnerHarvest"
+                        android:baselineAligned="false"
+                        android:contentDescription="@string/imgco2"
+                        app:srcCompat="@drawable/havesting" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <ImageView
+                        android:id="@+id/imgYield"
+                        android:layout_width="46dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="39dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_toStartOf="@+id/spinnerYield"
+                        android:baselineAligned="true"
+                        android:contentDescription="@string/imgco2"
+                        app:srcCompat="@drawable/mushroom" />
+
+                    <Spinner
+                        android:id="@+id/spinnerYield"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="44dp"
+                        android:layout_marginBottom="13dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:baselineAligned="false"
+                        android:spinnerMode="dropdown"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#CE468549"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/btnHTDHistoryBack"
+            android:layout_width="105dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnroundedsmall"
+            android:contentDescription="@string/imgbtnrefresh"
+            app:srcCompat="@drawable/iconrefresh" />
+
+        <ImageButton
+            android:id="@+id/btnEMSHistoryGraph"
+            android:layout_width="105dp"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnroundedyellow"
+            android:contentDescription="@string/btnnextimg"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/forward"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnYPHome"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toStartOf="@+id/btnEMSHistoryGraph"
+            android:layout_toEndOf="@+id/btnHTDHistoryBack"
+            android:backgroundTint="#00409F44"
+            android:contentDescription="@string/btnhome"
+            app:srcCompat="@drawable/iconhome"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

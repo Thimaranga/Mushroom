@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "937643280471",
+    "project_id": "androidtest-e60c5",
+    "storage_bucket": "androidtest-e60c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937643280471:android:4322a6eed6fb2661fffb12",
+        "android_client_info": {
+          "package_name": "com.example.mushroomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937643280471-tqedev42cf6s7cv47vlajd45o5p9erhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcc9wSmA5zGQVcU5zZuYE_kyiZpRn_1so"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937643280471-tqedev42cf6s7cv47vlajd45o5p9erhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".IntroActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/dradiantgreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/functionTxt"
+            android:layout_width="250dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="6dp"
+            android:gravity="center_horizontal"
+            android:text="@string/smart_mushroom_farming"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="136dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="207dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="73dp"
+            android:gravity="center_horizontal"
+            android:text="@string/smf"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+        <RelativeLayout
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/circleforimage"
+            android:backgroundTint="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="9dp"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/imglogo"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/mashroom_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:background="@drawable/roundrelativeview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btnHTD"
+            android:layout_width="353dp"
+            android:layout_height="89dp"
+            android:layout_below="@+id/btnEMS"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/roundedbutton"
+            android:text="@string/harvesting_time_detection"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="#81D685" />
+
+        <Button
+            android:id="@+id/btnDD"
+            android:layout_width="353dp"
+            android:layout_height="89dp"
+            android:layout_below="@+id/btnHTD"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/roundedbutton"
+            android:text="@string/disease_detection"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="#4AB34E" />
+
+        <Button
+            android:id="@+id/btnYD"
+            android:layout_width="353dp"
+            android:layout_height="89dp"
+            android:layout_below="@+id/btnDD"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="105dp"
+            android:background="@drawable/roundedbutton"
+            android:text="@string/yield_prediction"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="#237026" />
+
+        <Button
+            android:id="@+id/btnEMS"
+            android:layout_width="353dp"
+            android:layout_height="89dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/roundedbutton"
+            android:text="@string/enviornmental_monitorin_system"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="#A7D8A9" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
