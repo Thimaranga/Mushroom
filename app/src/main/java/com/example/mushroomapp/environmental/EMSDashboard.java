@@ -64,7 +64,7 @@ public class EMSDashboard extends AppCompatActivity {
         txtCo2 = findViewById(R.id.txtCo2);
 
         button=findViewById(R.id.btnYPHome);
-        btnGraph=findViewById(R.id.btnEMSHistoryGraph);
+        btnGraph=findViewById(R.id.btnHTDHistory);
         btnRefresh=findViewById(R.id.btnHTDHistoryBack);
 
         db = FirebaseDatabase.getInstance().getReference().child("SensorData");

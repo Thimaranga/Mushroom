@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class HarvestingResults extends AppCompatActivity {
 
     ImageView getResult;
+
     ImageButton btnHistory;
     ImageButton btnHome;
 
@@ -45,7 +46,8 @@ public class HarvestingResults extends AppCompatActivity {
         db = FirebaseDatabase.getInstance().getReference().child("HarvestDetails");
 
         getResult = findViewById(R.id.imgResult);
-        btnHistory = findViewById(R.id.btnYPNew);
+
+        btnHistory = findViewById(R.id.btnHTDHistory);
         btnHome = findViewById(R.id.btnYPHome);
 
         timeHTD = findViewById(R.id.txtHTDTime);

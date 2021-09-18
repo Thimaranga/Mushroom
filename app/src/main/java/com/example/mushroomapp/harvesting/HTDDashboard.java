@@ -1,7 +1,5 @@
 package com.example.mushroomapp.harvesting;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mushroomapp.IntroActivity;
 import com.example.mushroomapp.R;
@@ -47,6 +47,7 @@ public class HTDDashboard extends AppCompatActivity {
         btnCam = findViewById(R.id.btnAdd);
         imgGet = findViewById(R.id.imgGetImage);
         btnAnlyze = findViewById(R.id.btnAnalyze);
+
         btnReset = findViewById(R.id.btnHTDHistoryBack);
         btnHome = findViewById(R.id.btnYPHome);
         btnHistory = findViewById(R.id.btnYPNew);
