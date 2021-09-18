@@ -1,16 +1,11 @@
 package com.example.mushroomapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 
-import com.example.mushroomapp.harvesting.HTDDashboard;
-import com.example.mushroomapp.yield.YPDashboard;
-import com.example.mushroomapp.yield.YPSplash;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

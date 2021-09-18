@@ -104,14 +104,14 @@
             <RelativeLayout
                 android:id="@+id/relativeLayout5"
                 android:layout_width="match_parent"
-                android:layout_height="492dp"
+                android:layout_height="527dp"
                 android:background="@drawable/roundrelativeview"
                 android:gravity="center_horizontal">
 
                 <Button
                     android:id="@+id/btnHTD"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_below="@+id/btnEMS"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
@@ -121,13 +121,13 @@
                     android:background="@drawable/roundedbutton"
                     android:text="@string/harvesting_time_detection"
                     android:textColor="#000000"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     app:backgroundTint="#81D685" />
 
                 <Button
                     android:id="@+id/btnDD"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_below="@+id/btnHTD"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
@@ -137,31 +137,29 @@
                     android:background="@drawable/roundedbutton"
                     android:text="@string/disease_detection"
                     android:textColor="#000000"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     app:backgroundTint="#4AB34E" />
 
                 <Button
                     android:id="@+id/btnYD"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_below="@+id/btnDD"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="33dp"
                     android:layout_marginEnd="31dp"
-                    android:layout_marginBottom="26dp"
                     android:background="@drawable/roundedbutton"
                     android:text="@string/yield_prediction"
                     android:textColor="#000000"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     app:backgroundTint="#237026" />
 
                 <Button
                     android:id="@+id/btnEMS"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
@@ -170,7 +168,7 @@
                     android:background="@drawable/roundedbutton"
                     android:text="@string/enviornmental_monitorin_system"
                     android:textColor="#000000"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     app:backgroundTint="#A7D8A9" />
             </RelativeLayout>
 
