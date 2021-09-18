@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="777dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -346,67 +346,51 @@
         </LinearLayout>
     </ScrollView>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="89dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:background="#CE468549"
+        android:gravity="center|center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <ImageButton
-            android:id="@+id/btnYPNew"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/btnroundedsmallgray"
-            android:contentDescription="@string/history"
-            app:srcCompat="@drawable/iconhistory"
-            tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/htdDashboardLayout">
 
         <ImageButton
             android:id="@+id/btnHTDHistoryBack"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="270dp"
-            android:layout_marginBottom="13dp"
+            android:layout_width="107dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/btnroundedsmallcream"
-            android:contentDescription="@string/imgbtnrefresh"
-            app:srcCompat="@drawable/iconrefresh" />
+            app:srcCompat="@drawable/iconrefresh"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/btnYPHome"
-            android:layout_width="87dp"
-            android:layout_height="64dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="169dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="155dp"
-            android:layout_marginBottom="12dp"
-            android:background="#00468549"
-            android:contentDescription="@string/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/iconhome"
             app:srcCompat="@drawable/iconhome"
             tools:ignore="SpeakableTextPresentCheck" />
 
-    </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btnEMSHistoryGraph"
+            android:layout_width="107dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btnroundedsmallgray"
+            app:srcCompat="@drawable/iconhistory"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
