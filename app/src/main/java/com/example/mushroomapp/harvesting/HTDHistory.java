@@ -29,7 +29,7 @@ public class HTDHistory extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        home=findViewById(R.id.btnHTDHistoryHome);
+        home=findViewById(R.id.btnYPHome);
         back=findViewById(R.id.btnHTDHistoryBack);
         history=findViewById(R.id.btnHTDHistoryRefresh);
 

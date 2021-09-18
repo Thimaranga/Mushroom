@@ -39,7 +39,7 @@ public class EMSGraph extends AppCompatActivity {
 
         setContentView(R.layout.activity_e_m_s_graph);
 
-        home=findViewById(R.id.btnHTDHistoryHome);
+        home=findViewById(R.id.btnYPHome);
         history=findViewById(R.id.btnEMSHistoryGraph);
         refresh=findViewById(R.id.btnHTDHistoryBack);
 

@@ -4,107 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dradiantgreen"
     tools:context=".yield.YPRecommendation">
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout7"
-        android:layout_width="429dp"
-        android:layout_height="191dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="0dp">
-
-            <TextView
-                android:id="@+id/functionTxt"
-                android:layout_width="256dp"
-                android:layout_height="55dp"
-                android:layout_below="@+id/textView2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="163dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/yield_prediction"
-                android:textColor="#FFFFFF"
-                android:textSize="34sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="136dp"
-                android:layout_height="58dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="207dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="89dp"
-                android:gravity="center_horizontal"
-                android:text="@string/smf"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp" />
-
-            <RelativeLayout
-                android:layout_width="126dp"
-                android:layout_height="126dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="286dp"
-                android:layout_marginBottom="28dp"
-                android:background="@drawable/circleforimage"
-                android:backgroundTint="#FFFFFF">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="9dp"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/imglogo"
-                    android:cropToPadding="false"
-                    app:srcCompat="@drawable/mashroom_icon" />
-            </RelativeLayout>
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="429dp"
-        android:layout_height="569dp"
-        android:background="@drawable/roundrelativeview"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dradiantgreen">
+
+                <RelativeLayout
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="171dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/roundrelativeview" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_toEndOf="@+id/imgLayout"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/smf"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="1:1" />
+
+                <TextView
+                    android:id="@+id/functionTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toEndOf="@+id/imgLayout"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center_horizontal"
+                    android:text="@string/yield_prediction"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/imgLayout"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/circleforimage"
+                    android:backgroundTint="#FFFFFF"
+                    app:layout_constraintDimensionRatio="1:1">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="9dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@string/imglogo"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/mashroom_icon" />
+                </RelativeLayout>
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -118,7 +117,6 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="14dp"
                     android:src="@drawable/walkingmushroom"
@@ -132,12 +130,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="81dp">
+                android:layout_height="170dp">
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="363dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
@@ -160,7 +158,7 @@
             <RelativeLayout
                 android:id="@+id/dynamicYPLayout"
                 android:layout_width="wrap_content"
-                android:layout_height="308dp"
+                android:layout_height="379dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="12dp"
@@ -169,7 +167,7 @@
                 <RelativeLayout
                     android:id="@+id/monthlyRecommend"
                     android:layout_width="wrap_content"
-                    android:layout_height="58dp"
+                    android:layout_height="69dp"
                     android:layout_above="@+id/recommendLayout"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
@@ -177,13 +175,13 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="27dp"
                     android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="21dp"
+                    android:layout_marginBottom="13dp"
                     android:background="#DF8EBD80">
 
                     <TextView
                         android:id="@+id/txtYield"
                         android:layout_width="wrap_content"
-                        android:layout_height="38dp"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginStart="33dp"
@@ -203,13 +201,12 @@
                     <TextView
                         android:id="@+id/txtYieldVal"
                         android:layout_width="131dp"
-                        android:layout_height="38dp"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="26dp"
-                        android:layout_marginTop="11dp"
+                        android:layout_marginTop="18dp"
                         android:layout_toEndOf="@+id/txtYield"
-                        android:gravity="center_vertical"
-                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -222,25 +219,27 @@
                 <RelativeLayout
                     android:id="@+id/recommendLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="157dp"
+                    android:layout_height="242dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="28dp"
-                    android:background="#86304E2D">
+                    android:background="#86304E2D"
+                    android:gravity="center_horizontal">
 
                     <TextView
                         android:id="@+id/txtRecommendField"
-                        android:layout_width="328dp"
-                        android:layout_height="84dp"
+                        android:layout_width="332dp"
+                        android:layout_height="77dp"
+                        android:layout_below="@+id/txtRecommendation"
                         android:layout_alignParentStart="true"
-                        android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="24dp"
-                        android:layout_marginEnd="19dp"
-                        android:layout_marginBottom="21dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="11dp"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -251,16 +250,13 @@
 
                     <TextView
                         android:id="@+id/txtRecommendation"
-                        android:layout_width="221dp"
-                        android:layout_height="33dp"
-                        android:layout_above="@+id/txtRecommendField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="71dp"
-                        android:layout_marginTop="13dp"
-                        android:layout_marginEnd="80dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="20dp"
                         android:text="@string/recommendation"
                         android:textSize="24sp"
                         android:textStyle="bold|italic"
@@ -276,69 +272,51 @@
         </LinearLayout>
     </ScrollView>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="89dp"
-        android:background="#548556"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#CE468549"
+        android:gravity="center|center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.73">
 
         <ImageButton
             android:id="@+id/btnHTDHistoryBack"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="270dp"
-            android:layout_marginBottom="13dp"
+            android:layout_width="107dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
             android:background="@drawable/btnroundedsmall"
-            android:contentDescription="@string/imgbtnrefresh"
             android:rotation="180"
-            app:srcCompat="@drawable/forward" />
-
-        <ImageButton
-            android:id="@+id/btnYPNew"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/btnroundedyellow"
-            android:contentDescription="@string/btnnextimg"
-            app:srcCompat="@drawable/newmedium"
+            app:srcCompat="@drawable/forward"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/btnHTDHistoryHome"
-            android:layout_width="87dp"
-            android:layout_height="64dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="169dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="155dp"
-            android:layout_marginBottom="12dp"
-            android:backgroundTint="#006C4B4B"
-            android:contentDescription="@string/btnhome"
+            android:id="@+id/btnYPHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/iconhome"
             app:srcCompat="@drawable/iconhome"
             tools:ignore="SpeakableTextPresentCheck" />
 
-    </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btnYPNew"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/btnroundedyellow"
+            app:srcCompat="@drawable/newmedium"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

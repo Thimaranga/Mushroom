@@ -63,7 +63,7 @@ public class EMSDashboard extends AppCompatActivity {
         txtHumidity = findViewById(R.id.txtHumidity);
         txtCo2 = findViewById(R.id.txtCo2);
 
-        button=findViewById(R.id.btnHTDHistoryHome);
+        button=findViewById(R.id.btnYPHome);
         btnGraph=findViewById(R.id.btnEMSHistoryGraph);
         btnRefresh=findViewById(R.id.btnHTDHistoryBack);
 

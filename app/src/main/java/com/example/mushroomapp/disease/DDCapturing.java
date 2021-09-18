@@ -35,7 +35,7 @@ public class DDCapturing extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        btnHome = findViewById(R.id.btnHTDHistoryHome);
+        btnHome = findViewById(R.id.btnYPHome);
         imgGet = findViewById(R.id.imgDDUpload);
 
         btnUpload = findViewById(R.id.btnDDGallery);

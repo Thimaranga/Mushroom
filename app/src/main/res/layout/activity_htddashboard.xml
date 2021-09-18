@@ -6,208 +6,264 @@
     android:layout_height="match_parent"
     tools:context=".harvesting.HTDDashboard">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout7"
+    <ScrollView
+        android:id="@+id/htdDashboardLayout"
         android:layout_width="match_parent"
-        android:layout_height="232dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/dradiantgreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/functionTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="90dp"
-            android:layout_marginEnd="5dp"
-            android:gravity="center_horizontal"
-            android:text="@string/harvest_time_detection"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="136dp"
-            android:layout_height="58dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="207dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="73dp"
-            android:gravity="center_horizontal"
-            android:text="@string/smf"
-            android:textColor="#FFFFFF"
-            android:textSize="48sp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="126dp"
-        android:layout_height="126dp"
-        android:background="@drawable/circleforimage"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="9dp"
-            android:adjustViewBounds="false"
-            android:contentDescription="@string/imglogo"
-            android:cropToPadding="false"
-            app:srcCompat="@drawable/mashroom_icon" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/mainContent"
-        android:layout_width="match_parent"
-        android:layout_height="620dp"
-        android:layout_marginBottom="1dp"
-        android:background="@drawable/roundrelativeview"
-        android:gravity="center_horizontal"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7"
-        app:layout_constraintVertical_bias="1.0">
-
-        <ImageView
-            android:id="@+id/imgGetImage"
-            android:layout_width="377dp"
-            android:layout_height="254dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="84dp"
-            android:layout_marginEnd="31dp"
-            android:background="@drawable/button_border"
-            android:contentDescription="@string/capturedphoto"
-            tools:ignore="ImageContrastCheck"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="68dp"
-            android:layout_below="@+id/imgGetImage"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="115dp"
-            android:layout_marginTop="58dp"
-            android:background="@drawable/button_border"
-            android:text="@string/upload"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="#F1C232"
-            app:icon="@drawable/galleymedium"
-            app:iconTint="#000000" />
-
-        <Button
-            android:id="@+id/btnAnalyze"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnAdd"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="116dp"
-            android:layout_marginTop="42dp"
-            android:background="@drawable/button_border"
-            android:text="@string/analyze"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="#568044"
-            app:icon="@drawable/analyzeblack"
-            app:iconTint="#000000" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="89dp"
-        android:background="#CE468549"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.110000014">
 
-        <ImageButton
-            android:id="@+id/btnHTDHistory"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/btnroundedyellow"
-            android:contentDescription="@string/history"
-            app:srcCompat="@drawable/iconhistory"
-            tools:ignore="SpeakableTextPresentCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:background="@drawable/dradiantgreen">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/roundrelativeview" />
+
+                <TextView
+                    android:id="@+id/functionTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@+id/imgLayout"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center_horizontal"
+                    android:text="@string/harvest_time_detection"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_toEndOf="@+id/imgLayout"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/smf"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="1:1" />
+
+                <RelativeLayout
+                    android:id="@+id/imgLayout"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/circleforimage"
+                    android:backgroundTint="#FFFFFF"
+                    app:layout_constraintDimensionRatio="1:1">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="9dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@string/imglogo"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/mashroom_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainContentHTDHistory"
+                android:layout_width="match_parent"
+                android:layout_height="540dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imgGetImage"
+                    android:layout_width="377dp"
+                    android:layout_height="254dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/button_border"
+                    android:contentDescription="@string/capturedphoto"
+                    tools:ignore="ImageContrastCheck"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_below="@+id/imgGetImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/button_border"
+                    android:text="@string/upload"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#F1C232"
+                    app:icon="@drawable/galleymedium"
+                    app:iconTint="#000000" />
+
+                <Button
+                    android:id="@+id/btnAnalyze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_below="@+id/btnAdd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/button_border"
+                    android:text="@string/analyze"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#568044"
+                    app:icon="@drawable/analyzeblack"
+                    app:iconTint="#000000" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="89dp"-->
+<!--        android:background="#CE468549"-->
+<!--        android:gravity="center_vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/htdDashboardLayout">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:gravity="start">-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnHTDHistoryBack"-->
+<!--                android:layout_width="125dp"-->
+<!--                android:layout_height="51dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                android:background="@drawable/btnroundedsmall"-->
+<!--                android:contentDescription="@string/imgbtnrefresh"-->
+<!--                app:srcCompat="@drawable/iconrefresh" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnHTDHistoryHome"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="64dp"-->
+<!--                android:layout_marginTop="11dp"-->
+<!--                android:layout_marginStart="@dimen/_40sdp"-->
+<!--                android:background="#00468549"-->
+<!--                android:contentDescription="@string/btnhome"-->
+<!--                app:srcCompat="@drawable/iconhome"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnHTDHistory"-->
+<!--                android:layout_width="124dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                android:layout_marginStart="@dimen/_30sdp"-->
+<!--                android:background="@drawable/btnroundedyellow"-->
+<!--                android:contentDescription="@string/history"-->
+<!--                app:srcCompat="@drawable/iconhistory"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#CE468549"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/htdDashboardLayout">
 
         <ImageButton
             android:id="@+id/btnHTDHistoryBack"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="270dp"
-            android:layout_marginBottom="13dp"
+            android:layout_width="107dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
             android:background="@drawable/btnroundedsmall"
-            android:contentDescription="@string/imgbtnrefresh"
-            app:srcCompat="@drawable/iconrefresh" />
+            app:srcCompat="@drawable/iconrefresh"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/btnHTDHistoryHome"
-            android:layout_width="87dp"
-            android:layout_height="64dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="169dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="155dp"
-            android:layout_marginBottom="12dp"
-            android:background="#00468549"
-            android:contentDescription="@string/btnhome"
+            android:id="@+id/btnYPHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/iconhome"
             app:srcCompat="@drawable/iconhome"
             tools:ignore="SpeakableTextPresentCheck" />
 
-    </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btnYPNew"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/btnroundedyellow"
+            app:srcCompat="@drawable/iconhistory"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

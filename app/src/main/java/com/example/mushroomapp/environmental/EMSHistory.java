@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -22,9 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Map;
 
 public class EMSHistory extends AppCompatActivity {
@@ -48,7 +45,7 @@ public class EMSHistory extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        home=findViewById(R.id.btnHTDHistoryHome);
+        home=findViewById(R.id.btnYPHome);
         back=findViewById(R.id.btnEMSBack);
         refresh=findViewById(R.id.btnEMSRefresh);
 

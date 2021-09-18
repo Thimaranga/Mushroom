@@ -154,7 +154,7 @@
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <ImageButton
-            android:id="@+id/btnHTDHistoryHome"
+            android:id="@+id/btnYPHome"
             android:layout_width="87dp"
             android:layout_height="64dp"
             android:layout_alignParentStart="true"

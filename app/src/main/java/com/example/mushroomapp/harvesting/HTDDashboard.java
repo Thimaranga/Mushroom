@@ -48,8 +48,8 @@ public class HTDDashboard extends AppCompatActivity {
         imgGet = findViewById(R.id.imgGetImage);
         btnAnlyze = findViewById(R.id.btnAnalyze);
         btnReset = findViewById(R.id.btnHTDHistoryBack);
-        btnHome = findViewById(R.id.btnHTDHistoryHome);
-        btnHistory = findViewById(R.id.btnHTDHistory);
+        btnHome = findViewById(R.id.btnYPHome);
+        btnHistory = findViewById(R.id.btnYPNew);
 
         imgGet.setImageResource(R.drawable.dummy);
 

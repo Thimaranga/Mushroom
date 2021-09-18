@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,7 +34,7 @@ public class DDResults extends AppCompatActivity {
 
         imgMain = findViewById(R.id.imageView9);
 
-        btnHome = findViewById(R.id.btnHTDHistoryHome);
+        btnHome = findViewById(R.id.btnYPHome);
 
         imgDDRes = getIntent().getExtras().getParcelable("data");
         imgMain.setImageURI(imgDDRes);

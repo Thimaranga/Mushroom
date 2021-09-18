@@ -35,7 +35,7 @@ public class DiseaseDetectionDashboard extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        btnHom = findViewById(R.id.btnHTDHistoryHome);
+        btnHom = findViewById(R.id.btnYPHome);
 
         btnAddNew = findViewById(R.id.btnDDNew);
 

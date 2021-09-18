@@ -6,119 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".harvesting.HTDSplash">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout7"
+    <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/dradiantgreen"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.04000002">
 
-        <TextView
-            android:id="@+id/functionTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="101dp"
-            android:layout_marginEnd="5dp"
-            android:gravity="center_horizontal"
-            android:text="@string/harvest_time_detection"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="136dp"
-            android:layout_height="58dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="207dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="73dp"
-            android:gravity="center_horizontal"
-            android:text="@string/smf"
-            android:textColor="#FFFFFF"
-            android:textSize="48sp" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:background="@drawable/dradiantgreen">
 
-        <RelativeLayout
-            android:layout_width="126dp"
-            android:layout_height="126dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="29dp"
-            android:background="@drawable/circleforimage"
-            android:backgroundTint="#FFFFFF">
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/roundrelativeview" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="9dp"
-                android:adjustViewBounds="false"
-                android:contentDescription="@string/imglogo"
-                android:cropToPadding="false"
-                app:srcCompat="@drawable/mashroom_icon" />
-        </RelativeLayout>
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/functionTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@+id/imgLayout"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center_horizontal"
+                    android:text="@string/harvest_time_detection"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/loadingHTD2"
-        android:layout_width="297dp"
-        android:layout_height="131dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/loading" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_toEndOf="@+id/imgLayout"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/smf"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="1:1" />
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="311dp"
-        android:layout_height="243dp"
-        android:layout_marginTop="91dp"
-        android:layout_marginBottom="49dp"
-        android:src="@drawable/walkingmushroom"
-        app:layout_constraintBottom_toTopOf="@+id/loadingHTD2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="ImageContrastCheck" />
+                <RelativeLayout
+                    android:id="@+id/imgLayout"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/circleforimage"
+                    android:backgroundTint="#FFFFFF"
+                    app:layout_constraintDimensionRatio="1:1">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="291dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/to_detect_mushroom_harvest_time"
-        android:textColor="#455A64"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loadingHTD2"
-        app:layout_constraintVertical_bias="0.039" />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="9dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@string/imglogo"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/mashroom_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="615dp"
+                android:gravity="center|center_horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="143dp"
+                    android:layout_above="@+id/loadingHTD2"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="82dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_marginBottom="35dp"
+                    android:src="@drawable/walkingmushroom"
+                    tools:ignore="ImageContrastCheck" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/loadingHTD2"
+                    android:layout_width="208dp"
+                    android:layout_height="100dp"
+                    android:layout_above="@+id/textView11"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="115dp"
+                    android:layout_marginEnd="109dp"
+                    android:layout_marginBottom="37dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="81dp"
+
+                    android:layout_marginEnd="91dp"
+                    android:layout_marginBottom="98dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/to_detect_mushroom_harvest_time"
+                    android:textColor="#455A64"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

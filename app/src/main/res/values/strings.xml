@@ -3,7 +3,7 @@
     <string name="btnLogin">Let\'s Go...</string>
     <string name="imglogin">imgLogin</string>
     <string name="imglogo">imgLogo</string>
-    <string name="enviornmental_monitorin_system">ENVIORNMENTAL MONITORIN SYSTEM</string>
+    <string name="enviornmental_monitorin_system">ENVIORNMENTAL MONITORIN\nSYSTEM</string>
     <string name="harvesting_time_detection">HARVESTING TIME DETECTION</string>
     <string name="disease_detection">DISEASE DETECTION</string>
     <string name="yield_detection">YIELD DETECTION</string>
@@ -51,4 +51,9 @@
     <string name="english">English</string>
     <string name="upload">Upload</string>
     <string name="to_detect_mushroom_diseases">To detect Mushroom Diseases......</string>
+    <string name="harvest_time_detected">Harvest Time Detected</string>
+    <string name="we_identified_when_to_harvest_your_mushroom">We identified when to harvest your mushroom.</string>
+    <string name="harvest_time">Harvest Time :</string>
+    <string name="expire_date">Expire Date :</string>
+    <string name="textview">TextView</string>
 </resources>

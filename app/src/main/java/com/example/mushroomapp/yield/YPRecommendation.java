@@ -33,7 +33,7 @@ public class YPRecommendation extends AppCompatActivity {
         txtYield = findViewById(R.id.txtYieldVal);
         txtRecommand=findViewById(R.id.txtRecommendField);
         btnNew=findViewById(R.id.btnYPNew);
-        btnHome=findViewById(R.id.btnHTDHistoryHome);
+        btnHome=findViewById(R.id.btnYPHome);
 
         Bundle bdl = getIntent().getExtras();
         String yieldValue = bdl.getString("data");

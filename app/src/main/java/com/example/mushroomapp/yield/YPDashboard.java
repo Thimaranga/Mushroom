@@ -1,7 +1,5 @@
 package com.example.mushroomapp.yield;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mushroomapp.IntroActivity;
 import com.example.mushroomapp.R;
@@ -86,7 +86,7 @@ public class YPDashboard extends AppCompatActivity {
         harvesSpinner = findViewById(R.id.spinnerHarvest);
         yieldSpinner = findViewById(R.id.spinnerYield);
 
-        btnNext = findViewById(R.id.btnEMSHistoryGraph);
+        btnNext = findViewById(R.id.btnYPNew);
         btnHome = findViewById(R.id.btnYPHome);
 
         setDataSpinners();

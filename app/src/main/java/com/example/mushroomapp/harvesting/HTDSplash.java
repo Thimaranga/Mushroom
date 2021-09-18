@@ -1,13 +1,12 @@
 package com.example.mushroomapp.harvesting;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.mushroomapp.R;
-import com.example.mushroomapp.environmental.EMSDashboard;
 
 public class HTDSplash extends AppCompatActivity {
 
