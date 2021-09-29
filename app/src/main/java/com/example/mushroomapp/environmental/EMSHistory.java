@@ -1,8 +1,5 @@
 package com.example.mushroomapp.environmental;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,6 +9,9 @@ import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mushroomapp.IntroActivity;
 import com.example.mushroomapp.R;
@@ -29,8 +29,8 @@ public class EMSHistory extends AppCompatActivity {
 
     TableLayout table;
     //String arry[][]= {{"Hello","World","25","Male"},{"asd","sdsd","dasdsa","asddas"}};
-    int x=1;
-//    String [][] arry=new String[x][4];
+//    int x=1;
+    //String [][] arry=new String[x][4];
 
     ImageButton home;
     ImageButton back;
@@ -67,6 +67,7 @@ public class EMSHistory extends AppCompatActivity {
         table = findViewById(R.id.tblEMSlayout);
         //showTableLayout();
 
+        //Read data from database
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("SensorData");
         ref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -134,9 +135,7 @@ public class EMSHistory extends AppCompatActivity {
         Log.d("Hell",te);
     }
 
-    public  void showTableLayout(String [][] arry){
-        int rows = 2;
-        int colums  = 4;
+public  void showTableLayout(String [][] arry){
 
 
         table.setStretchAllColumns(true);

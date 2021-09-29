@@ -34,4 +34,5 @@ public class EMSData {
     public String getSendTime() {
         return sendTime;
     }
+
 }
