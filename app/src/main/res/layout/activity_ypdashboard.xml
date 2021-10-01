@@ -117,212 +117,102 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="77dp">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
 
-                <Spinner
+                <ImageButton
                     android:id="@+id/spinnerTemp"
-                    android:layout_width="250dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="12dp"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:baselineAligned="false"
-                    android:spinnerMode="dropdown"
-                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-                <ImageView
-                    android:id="@+id/imgTemp"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
+                    android:layout_width="129dp"
+                    android:layout_height="101dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="56dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_toStartOf="@+id/spinnerTemp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="49dp"
                     android:baselineAligned="false"
-                    android:contentDescription="@string/imgtemp"
-                    app:srcCompat="@drawable/icontemp" />
+                    android:src="@drawable/icontemp" />
 
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="77dp">
-
-                <ImageView
-                    android:id="@+id/imgHumidity"
-                    android:layout_width="63dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="37dp"
-                    android:layout_marginEnd="21dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_toStartOf="@+id/spinnerHumidity"
-                    android:baselineAligned="false"
-                    android:contentDescription="@string/imghumidity"
-                    app:srcCompat="@drawable/iconhumi"
-                    tools:ignore="ImageContrastCheck" />
-
-                <Spinner
+                <ImageButton
                     android:id="@+id/spinnerHumidity"
-                    android:layout_width="250dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_width="129dp"
+                    android:layout_height="101dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="251dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="49dp"
                     android:baselineAligned="false"
-                    android:spinnerMode="dropdown"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:src="@drawable/iconhumi" />
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="77dp">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
 
-                <Spinner
+                <ImageButton
                     android:id="@+id/spinnerCo2"
-                    android:layout_width="250dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:baselineAligned="true"
-                    android:spinnerMode="dropdown"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:id="@+id/imgCo2"
-                    android:layout_width="59dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="129dp"
+                    android:layout_height="101dp"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="17dp"
-                    android:layout_toStartOf="@+id/spinnerCo2"
+                    android:layout_marginStart="69dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="21dp"
                     android:baselineAligned="false"
-                    android:contentDescription="@string/imgco2"
-                    app:srcCompat="@drawable/iconco2"
-                    tools:ignore="ImageContrastCheck" />
-            </RelativeLayout>
+                    android:src="@drawable/iconco2" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="77dp">
-
-                <Spinner
+                <ImageButton
                     android:id="@+id/spinnerDisease"
-                    android:layout_width="250dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:baselineAligned="false"
-                    android:spinnerMode="dropdown"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:id="@+id/imgDisease"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
+                    android:layout_width="129dp"
+                    android:layout_height="101dp"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="38dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="37dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_toStartOf="@+id/spinnerDisease"
+                    android:layout_marginStart="253dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
                     android:baselineAligned="false"
-                    android:contentDescription="@string/imgco2"
-                    app:srcCompat="@drawable/virus"
-                    tools:ignore="ImageContrastCheck" />
+                    android:src="@drawable/virus" />
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="77dp">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
 
-                <Spinner
+                <ImageButton
                     android:id="@+id/spinnerHarvest"
-                    android:layout_width="250dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:baselineAligned="false"
-                    android:spinnerMode="dropdown"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:id="@+id/imgHarvest"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
+                    android:layout_width="129dp"
+                    android:layout_height="101dp"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="37dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="38dp"
-                    android:layout_marginBottom="12dp"
-                    android:layout_toStartOf="@+id/spinnerHarvest"
+                    android:layout_marginStart="69dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="21dp"
                     android:baselineAligned="false"
-                    android:contentDescription="@string/imgco2"
-                    app:srcCompat="@drawable/havesting" />
-            </RelativeLayout>
+                    android:src="@drawable/havesting" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="77dp">
-
-                <ImageView
-                    android:id="@+id/imgYield"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="39dp"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="16dp"
-                    android:layout_toStartOf="@+id/spinnerYield"
-                    android:baselineAligned="true"
-                    android:contentDescription="@string/imgco2"
-                    app:srcCompat="@drawable/mushroom" />
-
-                <Spinner
+                <ImageButton
                     android:id="@+id/spinnerYield"
-                    android:layout_width="250dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
+                    android:layout_width="129dp"
+                    android:layout_height="101dp"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="44dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_marginStart="253dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
                     android:baselineAligned="false"
-                    android:spinnerMode="dropdown"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:src="@drawable/mushroom" />
+
+
             </RelativeLayout>
+
 
         </LinearLayout>
     </ScrollView>

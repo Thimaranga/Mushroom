@@ -7,12 +7,12 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\thush\.android\avd\Nexus_S_API_27.avd" />
+            <value value="C:\Users\thush\.android\avd\Pixel_3a_XL_API_27.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2021-09-29T19:03:01.863200700Z" />
+    <timeTargetWasSelectedWithDropDown value="2021-09-30T09:00:28.611572600Z" />
     <targetsSelectedWithDialog>
       <Target>
         <type value="QUICK_BOOT_TARGET" />

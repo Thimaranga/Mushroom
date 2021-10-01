@@ -26,6 +26,8 @@
     <string name="mushroom_diseases">Mushroom Diseases</string>
     <string name="gallery">Gallery</string>
     <string name="analyze">Analyze</string>
+    <string name="DD_analyze1">Analyze\n(On Cultivarion Bag)</string>
+    <string name="DD_analyze2">Analyze\n(On Mushroom Bud)</string>
     <string name="camera">Camera</string>
     <string name="history">history</string>
     <string name="harvest_time_detection">Harvest Time Detection</string>
@@ -56,4 +58,12 @@
     <string name="harvest_time">Harvest Time :</string>
     <string name="expire_date">Expire Date :</string>
     <string name="textview">TextView</string>
+    <string name="day_1">Day 1</string>
+    <string name="day_2">Day 2</string>
+    <string name="day_3">Day 3</string>
+    <string name="day_4">Day 4</string>
+    <string name="day_5">Day 5</string>
+    <string name="cancel_popup">Cancel</string>
+    <string name="ok_popup">Ok</string>
+    <string name="temperature_celsius">Temperature + (char) 0x00B0+\'C\'</string>
 </resources>

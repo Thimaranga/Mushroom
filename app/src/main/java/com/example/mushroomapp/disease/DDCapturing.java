@@ -1,7 +1,5 @@
 package com.example.mushroomapp.disease;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mushroomapp.IntroActivity;
 import com.example.mushroomapp.R;
@@ -20,7 +20,7 @@ public class DDCapturing extends AppCompatActivity {
     ImageButton btnHome;
     ImageView imgGet;
     Button btnUpload;
-    Button btnDDAnlyze;
+    Button btnDDAnlyze,btnDDAnlyze2;
 
     Boolean setState = true; //this must be true if uploaded image is ok.
 
@@ -41,6 +41,7 @@ public class DDCapturing extends AppCompatActivity {
         btnUpload = findViewById(R.id.btnDDGallery);
 
         btnDDAnlyze = findViewById(R.id.btnDDAnalyze);
+        btnDDAnlyze2 = findViewById(R.id.btnDDAnalyze2);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,15 @@ public class DDCapturing extends AppCompatActivity {
         });
 
         btnDDAnlyze.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), DDResults.class);
+                i.putExtra("data", mimgUri);
+                startActivity(i);
+            }
+        });
+
+        btnDDAnlyze2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), DDResults.class);
